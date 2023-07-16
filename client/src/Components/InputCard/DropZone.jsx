@@ -18,7 +18,7 @@ function DropZone({inputRef}) {
         changeWhatToDisplay(1);
         const image=getImage(e);
         const id=await postImage(image);
-        console.log(id);
+        // console.log(id);
         localUrl.current=URL.createObjectURL(image);
         setUrl(`${SERVER_URL}image/${id}`);
         changeWhatToDisplay(2);

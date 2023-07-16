@@ -7,12 +7,13 @@ async function storeImage(req,res){
         const image=new Image({
             fileName:req.file.filename,
         })
+        // console.log(image);
         await image.save();
         res.status(200).json({
             message:"image uploaded successfully",
             imageId:image._id,
         });
-
+        
     } catch (error) {
         res.status(500).json(error.message);
     }

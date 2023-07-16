@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const upload=require('../controllers/fileHandler')
+const upload=require('../utils/fileHandler')
 const {storeImage,getImage}=require('../controllers/image')
 
 

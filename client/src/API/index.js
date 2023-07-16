@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+import { SERVER_URL } from '../assets/constants';
 export const API=axios.create({
-    baseURL:"https://image-server-spik.onrender.com/"
+    baseURL:SERVER_URL
 });
